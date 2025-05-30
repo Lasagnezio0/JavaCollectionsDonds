@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
 
-       // test Hello World
+       /* test Hello World
        System.out.println("Java Collections!");
 
        MyArray<String> ma = new MyArray<>();
@@ -31,7 +31,16 @@ public class App {
        System.out.println(l.getLength());
        l.removePosition(1);
        l.removePosition(l.getLength());
-       System.out.println(l);
+       System.out.println(l); */
 
+        ListaB<Integer> l = new ListaB<>();
+
+        l.addHead(8);
+        l.addHead(2);
+        l.addHead(5);
+        l.addTail(7);
+        l.addPosition(1, 3);
+        l.addPosition(3, 13);
+        System.out.println(l);
     }
 }
